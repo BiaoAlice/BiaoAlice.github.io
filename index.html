@@ -5,8 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0 ;
+        }
+        h1{
+            text-align: center;
+        }
+        .img-box {
+            width: 100%;
+            height: 168px !important;
+            overflow: hidden;
+        }
+        .img-box1{
+            width: 100%;
+            height: 128px !important;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
-    <h1>欢迎来到github</h1>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">项目展示</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="https://github.com/BiaoAlice" target="_blank">github首页 <span class="sr-only">(current)</span></a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="body">
+        <div class="page-header animated bounce">
+            <h1>Vue 项目</h1>
+        </div>
+        <div class="container">
+        <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="./img/网上购票系统.png" alt="...">
+                        <div class="caption">
+                            <h3>网上购票系统</h3>
+                            <p>利用Vue全家桶和Node制作</p>
+                            <p><a class="btn btn-primary" role="button" href="http://139.199.64.35:8080/" target="_blank">点击查看</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="img-box">
+                            <img src="./img/京东金融.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <h3>京东金融</h3>
+                            <p>Vue组件化编写</p>
+                            <p><a href="http://139.199.64.35:8081/" target="_blank" class="btn btn-primary" role="button">点击查看</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="img-box">
+                            <img src="./img/去哪网.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <h3>去哪网</h3>
+                            <p>模仿去哪网编写</p>
+                            <p><a href="http://139.199.64.35:8082/" target="_blank" class="btn btn-primary" role="button">点击查看</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header animated bounce">
+        <h1>原生项目 </h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="./img/起飞页.png" alt="...">
+                    <div class="caption">
+                        <h3>起飞页</h3>
+                        <p>利用H5、C3和Jq编写</p>
+                        <p><a href="https://biaoalice.github.io/qifeiye/" target="_blank" class="btn btn-primary" role="button">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="./img/bootstrap.png" alt="...">
+                    <div class="caption">
+                        <h3>响应式网页</h3>
+                        <p>使用bootstrap和css3编写</p>
+                        <p><a href="https://biaoalice.github.io/bootstrap/" target="_blank" class="btn btn-primary" role="button">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="img-box1">
+                        <img src="./img/电影票选购.png" alt="...">
+                    </div>
+                    <div class="caption">
+                        <h3>电影选购webapp</h3>
+                        <p>利用原生js编写的webapp</p>
+                        <p><a href="https://biaoalice.github.io/mobile/" target="_blank" class="btn btn-primary" role="button">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="img-box1">
+                        <img src="./img/棍子英雄.png" alt="...">
+                    </div>
+                    <div class="caption">
+                        <h3>仿棍子英雄</h3>
+                        <p>原生js和css3结合编写</p>
+                        <p><a href="https://biaoalice.github.io/stick-hero/" target="_blank" class="btn btn-primary" role="button">点击查看</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<h2>vue 编写</h2>-->
+
+    <!--<a  href="http://139.199.64.35:8082/" target="_blank">仿去哪网</a>-->
+    <!--<a href="http://139.199.64.35:8081/" target="_blank">仿京东金融</a>-->
+    <!--<a href="http://139.199.64.35:8080/" target="_blank">网上购票系统</a>-->
+
+    <!--<h2>原生编写</h2>-->
+    <!--<a href="https://biaoalice.github.io/qifeiye/" target="_blank">仿起飞页</a>-->
+    <!--<a href="https://biaoalice.github.io/mobile/" target="_blank">电影选票webapp</a>-->
+    <!--<a href="https://biaoalice.github.io/bootstrap/" target="_blank">bootstrap 响应式网页</a>-->
+    <!--<a href="https://biaoalice.github.io/stick-hero/" target="_blank">仿棍子英雄游戏</a>-->
+
 </body>
 </html>
