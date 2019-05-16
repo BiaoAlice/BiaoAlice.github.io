@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>李阳的个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            position: relative;
+        }
+        .swiper-slide:nth-child(1){
+            background-image: url('./img/bg1.jpg');
+        }
+        .swiper-slide:nth-child(2){
+            background-image: url('./img/bg2.jpg');
+            background-size: cover;
+        }
+        .swiper-slide:nth-child(3){
+            background-image: url('./img/bg3.jpg');
+            background-size: cover;
+        }
+        .swiper-slide:nth-child(4){
+            background-image: url('./img/bg4.jpg');
+            background-size: cover;
+        }
+        .first{
+            width: 100%;
+            height: 500px;
+            /*background-color: red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .first img{
+            width: 400px;
+            height: 500px;
+            opacity: 0;
+        }
+        .first-box{
+            width: 400px;
+            height: 500px;
+            color: #fff;
+            padding:50px 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            position: relative;
+            left:-100px;
+            opacity: 0;
+        }
+        .first-box h1 {
+            font-size: 38px;
+            animation: move1 1s;
+        }
+        .first-box h1, .first-box h2 ,.first-box h3 ,.first-box p{
+            font-weight: 200;
+        }
+        #main1{
+            position: relative;
+            top:200px;
+            opacity: 0;
+        }
+        .third{
+            width:100%;
+            height: 100%;
+        }
+        .third h1{
+            color:white  !important;
+        }
+        .third .third-box{
+            margin:0 auto;
+            min-width: 1080px;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .third .third-box h1{
+            opacity: 0;
+        }
+        .third .third-box div{
+            width: 300px;
+            height: 300px;
+            background-color:rgba(0,0,0,.5);
+            box-shadow: 0px 5px 5px #ccc;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .third .third-box div:hover{
+            box-shadow: 0px 0px 20px #ccc;
+        }
+        .third .third-box .img-box{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: none;
+        }
+        .third-box p a{
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+        .third-box p a:hover{
+            color: #ff851b;
+            animation: scale 1s;
+        }
+        @keyframes scale {
+            0%{
+                transform: scale(1,1);
+            }
+            50%{
+                transform: scale(.8,.8);
+            }
+            100%{
+                transform: scale(1.2,1.2);
+            }
+        }
+        .img-box img{
+            width: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="first">
+                <div class="first-box">
+                    <h1>李阳</h1>
+                    <h2>爱音乐、爱生活</h2>
+                    <h3>前端开发攻城狮</h3>
+                    <p>下滑查看更多</p>
+                </div>
+                <img src="./img/bg1-1.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div id="main1" style="width: 600px;height:400px;"></div>
+        </div>
+        <div class="swiper-slide" >
+            <div class="third">
+                <h1>JS项目展示</h1>
+                <div class="third-box">
+                    <div>
+                        <div class="img-box">
+                            <img src="./img/qifeiye.png" alt="">
+                        </div>
+                        <h3>起飞页官网</h3>
+                        <p><a href="https://biaoalice.github.io/qifeiye/" target="_blank">浏览</a></p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="./img/bootstrap.png" alt="">
+                        </div>
+                        <h3>英文响应式官网</h3>
+                        <p><a href="https://biaoalice.github.io/bootstrap/" target="_blank">浏览</a></p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="./img/JStick.png" alt="">
+                        </div>
+                        <h3>电影选票移动端</h3>
+                        <p><a href="https://biaoalice.github.io/mobile/" target="_blank">浏览</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="third fourth">
+                <h1>Vue项目展示</h1>
+                <div class="third-box">
+                    <div>
+                        <div class="img-box">
+                            <img src="./img/vueMusic.png" alt="">
+                        </div>
+                        <h3>网易云音乐</h3>
+                        <p><a href="http://139.199.64.35:3001/" target="_blank">浏览</a></p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="./img/sys.png" alt="">
+                        </div>
+                        <h3>漓江学院票务查询与预定系统</h3>
+                        <p><a href="http://139.199.64.35:8080/" target="_blank">浏览</a></p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="./img/JD.png" alt="">
+                        </div>
+                        <h3>京东（组件化开发）</h3>
+                        <p><a href="http://139.199.64.35:8081/" target="_blank">浏览</a></p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="./img/travel.png" alt="">
+                        </div>
+                        <h3>去哪网（vue基础练习）</h3>
+                        <p><a href="http://139.199.64.35:8082/" target="_blank">浏览</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+<script src="./dist/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    $(function() {
+
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                slideChangeTransitionStart: function () {
+                    switch (this.activeIndex) {
+                        case 1:
+                            second();
+                            break;
+                        case 2:
+                            third();
+                            break;
+                        case 3:
+                            fourth();
+                            break;
+                    }
+                }
+            }
+        });
+
+        function first(){
+            $('.swiper-slide-active .first-box').animate({
+                left:0,
+                opacity:1
+            },500)
+            $('.swiper-slide-active .first img').animate({
+                opacity:1
+            },500)
+        }
+        first();
+
+        function second (){
+            $('#main1').animate({
+                top:0,
+                opacity:1
+            },500)
+        }
+
+        function third(){
+            // animated bounce
+            $('.third').eq(0).find('h1').addClass('animated rotateIn').animate({opacity:1},500);
+            //rubberBand
+            $('.third').eq(0).find('.img-box').addClass('animated rubberBand');
+        }
+
+        function fourth(){
+            $('.fourth').find('h1').addClass('animated tada');
+            //bounceInRight
+            $('.fourth').find('.img-box').addClass('animated bounceInRight');
+            $('.fourth').find('.img-box').addClass('animated bounceInRight');
+            $('.fourth').find('p').addClass('animated slideInUp').siblings('h3').addClass('animated slideInUp');
+        }
+
+        //echarts
+        let myChart1 = echarts.init(document.getElementById('main1'));
+        let option1 = {
+            backgroundColor: '#2c343c',
+
+            title: {
+                text: '项目技术占比',
+                left: 'center',
+                top: 20,
+                textStyle: {
+                    color: '#ccc'
+                }
+            },
+
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+
+            visualMap: {
+                show: false,
+                min: 1,
+                max: 15,
+                inRange: {
+                    colorLightness: [0, 1]
+                }
+            },
+            series : [
+                {
+                    name:'所占比率',
+                    type:'pie',
+                    radius : '55%',
+                    center: ['50%', '50%'],
+                    data:[
+                        {value:8, name:'Vue'},
+                        {value:9, name:'JavaScript'},
+                        {value:7, name:'Jquery'},
+                        {value:10, name:'HTML、CSS'},
+                        {value:5,name:'Bootstarp、ElementUI'},
+                        {value:6,name:'Less'},
+                        {value:6,name:'Git'},
+                        {value:5,name:'webpack'},
+                        {value:4,name:'Node'}
+                    ].sort(function (a, b) { return a.value - b.value; }),
+                    roseType: 'radius',
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: 'rgba(255, 255, 255, 0.3)'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            lineStyle: {
+                                color: 'rgba(255, 255, 255, 0.3)'
+                            },
+                            smooth: 0.2,
+                            length: 10,
+                            length2: 20
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#c23531',
+                            shadowBlur: 200,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+
+                    animationType: 'scale',
+                    animationEasing: 'elasticOut',
+                    animationDelay: function (idx) {
+                        return Math.random() * 200;
+                    }
+                }
+            ]
+        };
+        myChart1.setOption(option1);
+
+
+        $('.img-box').on('mouseover',function(){
+            $(this).find('img').stop().animate({
+                top:$(this).height() - $(this).find('img').height() + 'px'
+            },3000)
+        })
+        $('.img-box').on('mouseleave',function(){
+            $(this).find('img').stop().animate({
+                top:0
+            },1000)
+        })
+    })
+</script>
+
+</body>
+</html>
